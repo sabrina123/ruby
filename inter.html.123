@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<script language="jscript" type="text/javascript">
+  function tel1(){
+		var str=document.form1.username.value;
+	
+		 	alert(str);
+			
+	
+	}
+	function tel2(){
+		var str=document.form1.pwdname.value;
+		 	alert(str);
+	}
+	function tel3(){
+	var str=document.form1.sexname.value;
+	   for(i=0;i<str.length;i++){
+			if(str[i].checked){
+			alert(str[i].value);
+			}
+		} 	
+	}
+	function tel4(){
+	var str=document.form1.likename.value;
+		 	for(i=0;i<str.length;i++){
+			if(str[i].checked){
+			alert(str[i].value);
+			}
+		}
+	}
+	function tel5(){
+	var str=document.form1.textarea.value;
+		 	alert(str);
+	}
+</script>
+</head>
+<body>
+<form action="" method="get" name="form1" >		
+<input name="name" type="text"  id="username"/>文本框<br />
+<input name="pwd" type="password" id="pwdname" />密码框<br />
+性别<input name="sex" type="radio"  value="男" id="sexname">男
+<input name="sex" type="radio"  value="女" id="sexname">女<br />
+喜好：
+    <input type="checkbox" name="checkbox" value="football">
+    足球&nbsp;&nbsp;
+    <input type="checkbox" name="checkbox2" value="basketball">
+    篮球&nbsp;&nbsp;<br />
+	<textarea name="textarea" cols="" rows="" >
+    </textarea><br />
+<input name="" type="button"  onclick="tel1();" value="文本框" />
+<input name="" type="button"onclick="tel2();"   value="密码框" />
+<input name="" type="button" onclick="tel3();" value="性别" />
+<input name="" type="button" onclick="tel4();" value="喜好" />
+<input name="" type="button" onclick="tel5();" value="文本域" />
+</form>
+</body>
+</html>
